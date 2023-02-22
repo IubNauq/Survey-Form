@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet"
+          href="styles_my.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form action=""
+          id="survey-form">
+        <fieldset>
+            <label for="name"
+                   id="name-label">Name<input type="text"
+                                              id="name"
+                                              placeholder="Enter your name"
+                                              class="form-control"
+                                              required></label>
+            <label for="email"
+                   id="email-label">Email<input type="email"
+                                                id="email"
+                                                placeholder="Enter your email"
+                                                class="form-control"
+                                                required></label>
+            <label for="number"
+                   id="number-label">Age<input type="number"
+                                               min="10"
+                                               max="100"
+                                               id="number"
+                                               class="form-control"
+                                               placeholder="Enter your age"></label>
+        </fieldset>
+        <fieldset>
+            <label for="dropdown" id="dropdown-label">Which option best describes your current role?
+                <select name="dropdown"
+                        id="dropdown"
+                        class="form-control">
+                    <option value="0">Select current role</option>
+                    <option value="1">Student</option>
+                    <option value="2">Full Time Job</option>
+                    <option value="3">Full Time Learner</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <label for="definitely"><input type="radio"
+                                           name="recommend"
+                                           value="0"
+                                           id="definitely"
+                                           class="inline"> Definitely</label>
+
+            <label for="maybe"><input type="radio"
+                                      name="recommend"
+                                      value="1"
+                                      id="maybe"
+                                      class="inline"> Maybe</label>
+
+
+            <label for="not-sure"><input type="radio"
+                                         name="recommend"
+                                         value="2"
+                                         id="not-sure"
+                                         class="inline"> Not sure</label>
+        </fieldset>
+        <fieldset>
+            <p>What would you like to see improved? (Check all that apply)</p>
+            <label for="front-end"><input type="checkbox"
+                                          value="0"
+                                          name="checkbox"
+                                          id="front-end"
+                                          class="inline"> Front-end Projects</label>
+            <label for="back-end"><input type="checkbox"
+                                         value="1"
+                                         name="checkbox"
+                                         id="back-end"
+                                         class="inline"> Back-end Projects</label>
+            <label for="data"><input type="checkbox"
+                                     value="2"
+                                     name="checkbox"
+                                     id="data"
+                                     class="inline"> Data Visualization</label>
+        </fieldset>
+        <fieldset>
+            <p>Any comments or suggestions?</p>
+            <label for="suggest">
+                <textarea class="form-control"
+                          id="suggest"
+                          name="suggest"></textarea>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="submit"><input type="submit"
+                                       value="Submit"
+                                       id="submit"/>
+            </label>
+
+        </fieldset>
+    </form>
+</body>
+</html>
