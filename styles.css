@@ -10,7 +10,8 @@ body {
 }
 
 form {
-    padding: 30px 0;
+    padding: 40px;
+    min-width: 400px;
     width: 500px;
     margin: auto;
     border-radius: 5px;
@@ -20,6 +21,8 @@ form {
 fieldset {
     border: none;
     color: aliceblue;
+    margin: 0;
+    padding: 0;
 }
 
 input, textarea, select {
@@ -28,22 +31,14 @@ input, textarea, select {
     border: 1px solid #ced4da;
     border-radius: 5px;
     font-family: inherit;
+    display: inline-block;
+    margin: 5px 0;
 }
 
 textarea {
     height: 100px;
 }
 
-select {
-    width: 103%;
-}
-
-.form-control {
-    margin: 10px 0;
-    border: 1px solid #ced4da;
-    padding-left: 10px;
-    color: rgb(100, 100, 100);
-}
 
 .inline {
     width: unset;
@@ -54,14 +49,23 @@ select {
 
 label {
     display: block;
-    padding: 0 20px;
-    margin-left: 15px;
-    margin-right: 30px;
+    /*padding: 0 20px;*/
+    margin: 0 auto 10px auto;
+    padding: 0;
+
+}
+
+.form-control {
+    border: 1px solid #ced4da;
+    padding: 1px 10px;
+    color: rgb(100, 100, 100);
+}
+
+* {
+    box-sizing: border-box;
 }
 
 input[type="submit"] {
-    display: block;
-    width: 103%;
     background-color: darkseagreen;
     border: 1px solid darkseagreen;
     color: aliceblue;
