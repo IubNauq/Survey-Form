@@ -17,12 +17,12 @@ form {
     background-color: rgba(106, 106, 206, 0.8);
 }
 
-fieldset{
+fieldset {
     border: none;
     color: aliceblue;
 }
 
-input,textarea,select {
+input, textarea, select {
     width: 100%;
     min-height: 30px;
     border: 1px solid #ced4da;
@@ -30,15 +30,19 @@ input,textarea,select {
     font-family: inherit;
 }
 
-select{
+textarea {
+    height: 100px;
+}
+
+select {
     width: 103%;
 }
 
-.form-control{
+.form-control {
     margin: 10px 0;
     border: 1px solid #ced4da;
     padding-left: 10px;
-    color: rgb(100,100,100);
+    color: rgb(100, 100, 100);
 }
 
 .inline {
@@ -63,6 +67,6 @@ input[type="submit"] {
     color: aliceblue;
 }
 
-input[type="submit"]:hover{
+input[type="submit"]:hover {
     background-color: greenyellow;
 }
