@@ -69,6 +69,7 @@ input[type="submit"] {
     background-color: darkseagreen;
     border: 1px solid darkseagreen;
     color: aliceblue;
+    transition: 0.5s ease;
 }
 
 input[type="submit"]:hover {
